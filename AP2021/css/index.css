@@ -1,0 +1,289 @@
+body {
+    background-color: black;
+    background-image: url("/APExhibition/media/IndexBackground.png");
+    background-repeat: repeat;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Cinzel Decorative', serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-header-link {
+    margin: 25px;
+}
+
+p, a {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.gallery-container {
+    width: 80vw;
+    max-height: 96vh;
+    height: 96vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .gallery-container {
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 90vw;
+    }
+}
+
+.gallery-header {
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    
+    /* height: 100%; */
+    width: 80%;
+    padding: 0;
+    /* margin: 0; */
+}
+
+@media (max-width: 800px) {
+    .gallery-grid {
+        width: 100%;
+    }
+}
+
+.col {
+    flex: 1;
+    max-height: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio {
+    position: relative;
+    max-width: 19%;
+    text-align: left;
+    /* margin: auto; */
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .portfolio {
+        margin-bottom: 10px;
+    }
+}
+
+
+.thumbnail {
+    width:100%; 
+    max-height:100%; 
+    object-fit:cover;
+    cursor: pointer;
+    display: block;
+}
+
+.special {
+    cursor: default;
+}
+
+
+.caption-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    opacity: 0;
+    word-wrap: break-word;
+    hyphens: auto;
+    transition: .3s ease;
+
+    padding-left: 10px;
+    padding-top: 20px;
+
+    cursor: pointer;
+}
+
+
+
+.portfolio:hover .caption-container {
+    opacity: 1 !important;
+  }
+
+  .portfolio:hover .thumbnail {
+      opacity: 0.3;
+      transition: .3s ease;
+  }
+
+  .nohover:hover .thumbnail {
+    opacity: 1;
+    transition: none;
+}
+
+.caption-1 {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: rgb(209, 209, 209);
+}
+
+.caption-2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.8rem;
+    color: rgb(209, 209, 209);
+}
+
+@media (max-width: 800px) {
+    .portfolio {
+        max-width: 32% ;
+    }
+    .col {
+        max-height: none;
+    }
+  }
+
+@media (max-width: 400px) {
+    .col {
+        justify-content: center;
+    }
+    
+.caption-1 {
+    font-size: 0.9rem;
+}
+    .gallery-grid {
+      display: block;
+    }
+    .portfolio {
+        width: 90%;
+        max-width: 90% ;
+    }
+  }
+
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      
+      z-index: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .back {
+      z-index: -1;
+  }
+  
+  .overlay-background {
+    background-color: black;
+    position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+      opacity : 0.6;
+      transition: opacity .5s;
+  }
+
+  .invis {
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .overlay-big {
+    font-size: 3.75rem;
+  }
+
+  .overlay-small {
+      font-size: 2.5rem;
+  }
+
+  .overlay-title {
+      font-weight: 700;
+    color: rgb(245, 245, 245);
+    
+    cursor: pointer;
+    transition: opacity .5s;
+    text-align: center;
+  }
+
+  .overlay-title:hover {
+      opacity: 0.75;
+  }
+  
+  .back .overlay-title {
+      opacity: 0.2;
+  }
+
+  @media (max-width: 800px) {
+    .overlay-big {
+        font-size: 3rem;
+    }
+    .overlay-small {
+        font-size: 2rem;
+    }
+  }
+
+@media (max-width: 400px) {
+    .overlay-big {
+        font-size: 2.3rem;
+    }
+    .overlay-small {
+        font-size: 1.6rem;
+    }
+  }

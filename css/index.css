@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Chonko';
+  src: url("../fonts/Chonko.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("../fonts/Inconsolata-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: "Chonko", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background: #eaeaea;
+}
+
+*::selection {
+  background: #eaeaea;
+}
+
+.landing {
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 8px;
+          perspective: 8px;
+  -webkit-perspective-origin: 50%;
+          perspective-origin: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .landing {
+    min-height: 100vh;
+  }
+}
+
+.landing .landing-content {
+  text-align: center;
+}
+
+.landing .landing-content .landing-title {
+  font-size: 12vh;
+  line-height: 100%;
+  color: #3D348B;
+}
+
+@media screen and (max-width: 500px) {
+  .landing .landing-content .landing-title {
+    font-size: 6vh;
+  }
+}
+
+.landing .landing-content .landing-icons {
+  margin-top: 20px;
+}
+
+.landing .landing-content .landing-icons .landing-icon {
+  cursor: pointer;
+  fill: #7678ED;
+  height: 30px;
+  margin: 5px;
+}
+
+.landing .landing-content .landing-icons .landing-icon:hover {
+  opacity: 0.5;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font-family: "Inconsolata";
+  line-height: 120%;
+  padding-bottom: 100px;
+}
+
+.description .text-heading {
+  color: #ff6600;
+  font-family: "Chonko";
+  text-align: left;
+  width: 40vw;
+  font-size: 5vh;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .description .text-heading {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description .text-heading {
+    width: 90vw;
+    font-size: 4vh;
+  }
+}
+
+.description .text-box {
+  max-width: 40vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .description .text-box {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description .text-box {
+    max-width: 90vw;
+  }
+}
+
+.description .text-box-2 {
+  max-width: 40vw;
+  text-align: left;
+}
+
+@media screen and (max-width: 1100px) {
+  .description .text-box-2 {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description .text-box-2 {
+    max-width: 90vw;
+  }
+}
+
+.description-1 {
+  padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1100px) {
+  .description-1 {
+    padding-bottom: 100px;
+  }
+}
+
+.image-grid {
+  margin: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 40vw;
+}
+
+.image-grid .image {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+.gallery-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 40vw;
+  padding: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .gallery-grid {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-grid {
+    width: 90vw;
+  }
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio {
+  position: relative;
+  width: 13vw;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .portfolio {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio {
+    width: 30vw;
+  }
+}
+
+.wideportfolio {
+  width: 15vw;
+}
+
+@media screen and (max-width: 1100px) {
+  .wideportfolio {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wideportfolio {
+    width: 80vw;
+  }
+}
+
+.portfolio:hover .caption-container {
+  opacity: 1 !important;
+}
+
+.portfolio:hover .thumbnail {
+  opacity: 0.1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.nohover:hover .thumbnail {
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.thumbnail {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+.caption-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  opacity: 0;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  padding-left: 10px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+a {
+  color: #0020d8;
+}

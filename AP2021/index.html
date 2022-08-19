@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <style>
+        .caption-container {
+            opacity: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+    <div class="overlay-background">
+
+    </div>
+
+    <div class="overlay">
+        <div class="overlay-title">
+            <div class="overlay-big">2021 AP Studio Art Exhibition</div>
+            <div class="overlay-small">The Harker School</div>
+        </div>
+
+        <script>
+            document.querySelector(".overlay-title").addEventListener("click", function(e) {
+                document.querySelector(".overlay-background").classList.add("invis")
+                document.querySelector(".overlay").classList.add("back")
+            })
+        </script>
+    </div>
+    <script>
+        if (localStorage.getItem("visited") == "true") {
+            document.querySelector(".overlay").classList.add("back");
+            document.querySelector(".overlay-background").remove();
+        }
+    </script>
+    <div class="gallery-container">
+        <!-- <div class="gallery-header">
+            <div class="gallery-header-links-container">
+                <a class="gallery-header-link" style="text-decoration: underline"
+                    href="">Portfolios</a>
+                <a class="gallery-header-link" href="https://github.com/g10ria/ArtClub-website/blob/master/readme.MD" target="_blank">Info</a>
+            </div>
+        </div> -->
+        <div class="gallery-grid">
+            <div class="col">
+
+                <div class="portfolio">
+                    <a href="./about.html">
+                        <img class="thumbnail" src="media/ABOUT-01.png">
+                        <div class="caption-container">
+                            <div class="caption-1"></div>
+                            <div class="caption-2"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio">
+                    <a href="./ArkitaJain" target="_blank">
+                        <img class="thumbnail" src="media/ArkitaJain_D/thumbnail.png">
+                        <div class="caption-container">
+                            <div class="caption-1">Suppression of Women in Indian Culture </div>
+                            <div class="caption-2">Arkita Jain</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./AnoushkaBuch" target="_blank">
+                        <img class="thumbnail" src="media/AnoushkaBuch_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Fading Magic</div>
+                            <div class="caption-2">Anoushka Buch</div>
+                        </div>
+                    </a>
+                </div>
+
+                
+
+                <div class="portfolio">
+                    <a href="./AnjaliYamasani" target="_blank">
+                        <img class="thumbnail" src="media/AnjaliYamasani_D/thumbnaill.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Polished Atrocities</div>
+                            <div class="caption-2">Anjali Yamasani</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio">
+                    <a href="./HannahGrannis" target="_blank">
+                        <img class="thumbnail" src="media/HannahGrannis_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Suffocating in Suburbia </div>
+                            <div class="caption-2">Hannah Grannis</div>
+                        </div>
+                    </a>
+                </div>
+                
+
+            </div>
+            <div class="col">
+
+                <div class="portfolio">
+                    <a href="./MichelleLiu" target="_blank">
+                        <img class="thumbnail" src="media/MichelleLiu_2D/thumbnail.png">
+                        <div class="caption-container">
+                            <div class="caption-1">Recollections</div>
+                            <div class="caption-2">Michelle Liu</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./AinsleyMillard" target="_blank">
+                        <img class="thumbnail" src="media/AinsleyMillard_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Corruption of Beauty</div>
+                            <div class="caption-2">Ainsley Millard</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./ShaliniRohra" target="_blank">
+                        <img class="thumbnail" src="media/ShaliniRohra_2D/thumbnail.png">
+                        <div class="caption-container">
+                            <div class="caption-1">Girlhood</div>
+                            <div class="caption-2">Shalini Rohra</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio">
+                    <a href="./MariaTeplova" target="_blank">
+                        <img class="thumbnail" src="media/MariaTeplova_3D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Manufactured</div>
+                            <div class="caption-2">Maria Teplova</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./GloriaZhu" target="_blank">
+                        <img class="thumbnail" src="media/GloriaZhu_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Discomfort</div>
+                            <div class="caption-2">Gloria Zhu</div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="col">
+
+                <div class="portfolio">
+                    <a href="./JackieHu" target="_blank">
+                        <img class="thumbnail" src="media/JackieHu_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Manipulation through Faith</div>
+                            <div class="caption-2">Jackie Hu</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./AriannaWeaver" target="_blank">
+                        <img class="thumbnail" src="media/AriannaWeaver_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Lonely World</div>
+                            <div class="caption-2">Arianna Weaver</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./BrooklynCicero" target="_blank">
+                        <img class="thumbnail" src="media/BrooklynCicero_D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">the female subconscious</div>
+                            <div class="caption-2">Brooklyn Cicero</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="./SydneyTakemoto" target="_blank">
+                        <img class="thumbnail" src="media/SydneyTakemoto_2D/thumbnail.jpg">
+                        <div class="caption-container">
+                            <div class="caption-1">Attention Deficit Disorder</div>
+                            <div class="caption-2">Sydney Takemoto</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio nohover">
+                    <!-- <a href="./about.html"> -->
+                        <img class="thumbnail special" src="media/thankyou.png">
+                    <!-- </a> -->
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    localStorage.setItem('visited', 'true')
+</script>
+
+</html>

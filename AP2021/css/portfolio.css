@@ -1,0 +1,249 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    background-image: url("/APExhibition/media/PortfolioBackground.png");
+    background-repeat: repeat;
+}
+
+p, a {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+a {
+    color: black;
+}
+
+p, a {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+.portfolio-container {
+    width: 100%;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-header {
+    padding-top: 1vh;
+    /* width: 25%; */
+    height: 12vh;
+}
+
+.portfolio-title-text {
+    text-align: center;
+
+    margin-bottom: 0;
+    font-size: 1.0rem;
+}
+
+.portfolio-header-link {
+    font-size: 0.8rem;
+}
+
+.portfolio-header-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-content {
+    align-self: flex-start;
+    height: 100vh;
+}
+
+.portfolio-content-scroll {
+    width: 100vw;
+    height: auto;
+    height: 100vh;
+    /* height: 100%; */
+    /* height: 70vh; */
+    padding-left: 25vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.portfolio-content-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.vert-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  margin-right: 12vw;
+}
+
+.portfolio-artist-statement-text {
+    min-width: 50vw;
+    width: 50vw;
+    
+    text-align: justify;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.portfolio-image {
+    max-height: 67vh;
+    /* margin-right: 12.5vw; */
+}
+
+.last-image {
+    margin-right: 51vw;
+}
+
+#small {
+    display: none;
+
+    width: 98vw;
+    margin-left: 1vw;
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.small-text {
+    text-align: justify;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    width: 80vw;
+    margin-left: 9vw;
+}
+
+@media (max-width: 1200px) {
+    .portfolio-artist-statement-text {
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 850px) {
+    .large {
+        display: none;
+    }
+    #small {
+        display: block;
+    }
+    .portfolio-container {
+        height: auto;
+    }
+    .portfolio-content {
+        height: auto;
+    }
+    body {
+        overflow: auto;
+    }
+
+    .portfolio-header {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .portfolio-image {
+        max-width: 92vw;
+    }
+}
+
+.chonk {
+    margin-bottom: 50px;
+}
+
+.label {
+    font-family: 'Cinzel Decorative', cursive;
+    
+    text-align: center;
+    width: 100%;
+    margin-top: 2vh;
+    height: 13vh;
+    width: 100%;
+}
+
+.label-title {
+    font-size: 1.2rem;
+    /* font-weight: 700; */
+}
+.label-desc {
+    font-size: 0.8rem;
+}
+
+.portfolio-label-text {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    position: absolute;
+
+    transition: opacity .2s ease;
+}
+
+.pixels {
+    width: 1px;
+    height: 1px;
+    top: 100px;
+    left: 0;
+    /* opacity: 0; */
+    background-color:red;
+    }
+
+    .hidden-label {
+        opacity: 0 !important;
+    }
+
+    .tooltip {
+        position: fixed;
+        bottom: 7px;
+        right: 7px;
+        font-style: italic;
+    }
+
+    .fixedback {
+        position: fixed;
+        bottom: 7px;
+        left: 7px;
+    }
